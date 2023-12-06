@@ -159,7 +159,8 @@
 }
 
 .video {
-  height: 100px;
+  height: 10dvh;
+  min-height: 100px;
   position: absolute;
   bottom: 20dvh;
   width: 100dvw;
@@ -175,7 +176,7 @@
   top: 0;
 }
 
-.playbutton {
+#playbutton-genshinimpact {
   height: 45px;
   width: 45px;
   border-radius: 30px;
@@ -186,17 +187,134 @@
   transition: 400ms;
 }
 
-.playbutton > img {
+#playbutton-genshinimpact > img {
   position: relative;
   left: 3px;
 }
 
-.playbutton:hover {
+#playbutton-genshinimpact:hover {
   background-color: #00000000;
 }
 
-.playbutton:hover > img {
+#playbutton-genshinimpact:hover > img {
   filter: brightness(500%);
+}
+
+#playbutton-tearsofthemis{
+  height: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+#playbutton-tearsofthemis>img{
+  height: 100%;
+  transform: 0s;
+  transition-duration: 0s;
+  animation: translateAnimation 2s linear infinite;
+}
+
+@keyframes translateAnimation{
+  00% {translate: -00.00% 0;}
+  01.99% {translate: -00.00% 0;}
+  02% {translate: -01.96% 0;}
+  03.99% {translate: -01.96% 0;}
+  04% {translate: -03.92% 0;}
+  05.99% {translate: -03.92% 0;}
+  06% {translate: -05.88% 0;}
+  07.99% {translate: -05.88% 0;}
+  08% {translate: -07.84% 0;}
+  09.99% {translate: -07.84% 0;}
+  10% {translate: -09.80% 0;}
+  11.99% {translate: -09.80% 0;}
+  12% {translate: -11.76% 0;}
+  13.99% {translate: -11.76% 0;}
+  14% {translate: -13.72% 0;}
+  15.99% {translate: -13.72% 0;}
+  16% {translate: -15.68% 0;}
+  17.99% {translate: -15.68% 0;}
+  18% {translate: -17.64% 0;}
+  19.99% {translate: -17.64% 0;}
+  20% {translate: -19.60% 0;}
+  21.99% {translate: -19.60% 0;}
+  22% {translate: -21.56% 0;}
+  23.99% {translate: -21.56% 0;}
+  24% {translate: -23.52% 0;}
+  25.99% {translate: -23.52% 0;}
+  26% {translate: -25.48% 0;}
+  27.99% {translate: -25.48% 0;}
+  28% {translate: -27.44% 0;}
+  29.99% {translate: -27.44% 0;}
+  30% {translate: -29.40% 0;}
+  31.99% {translate: -29.40% 0;}
+  32% {translate: -31.36% 0;}
+  33.99% {translate: -31.36% 0;}
+  34% {translate: -33.32% 0;}
+  35.99% {translate: -33.32% 0;}
+  36% {translate: -35.28% 0;}
+  37.99% {translate: -35.28% 0;}
+  38% {translate: -37.24% 0;}
+  39.99% {translate: -37.24% 0;}
+  40% {translate: -39.20% 0;}
+  41.99% {translate: -39.20% 0;}
+  42% {translate: -41.16% 0;}
+  43.99% {translate: -41.16% 0;}
+  44% {translate: -43.12% 0;}
+  45.99% {translate: -43.12% 0;}
+  46% {translate: -45.08% 0;}
+  47.99% {translate: -45.08% 0;}
+  48% {translate: -47.04% 0;}
+  48.99% {translate: -47.04% 0;}
+  50% {translate: -49.00% 0;}
+  51.99% {translate: -49.00% 0;}
+  52% {translate: -50.96% 0;}
+  53.99% {translate: -50.96% 0;}
+  54% {translate: -52.92% 0;}
+  55.99% {translate: -52.92% 0;}
+  56% {translate: -54.88% 0;}
+  57.99% {translate: -54.88% 0;}
+  58% {translate: -56.84% 0;}
+  59.99% {translate: -56.84% 0;}
+  60% {translate: -58.80% 0;}
+  61.99% {translate: -58.80% 0;}
+  62% {translate: -60.76% 0;}
+  63.99% {translate: -60.76% 0;}
+  64% {translate: -62.72% 0;}
+  65.99% {translate: -62.72% 0;}
+  66% {translate: -64.68% 0;}
+  67.99% {translate: -64.68% 0;}
+  68% {translate: -66.64% 0;}
+  69.99% {translate: -66.64% 0;}
+  70% {translate: -68.60% 0;}
+  71.99% {translate: -68.60% 0;}
+  72% {translate: -70.56% 0;}
+  73.99% {translate: -70.56% 0;}
+  74% {translate: -72.52% 0;}
+  75.99% {translate: -72.52% 0;}
+  76% {translate: -74.48% 0;}
+  77.99% {translate: -74.48% 0;}
+  78% {translate: -76.44% 0;}
+  79.99% {translate: -76.44% 0;}
+  80% {translate: -78.40% 0;}
+  81.99% {translate: -78.40% 0;}
+  82% {translate: -80.36% 0;}
+  83.99% {translate: -80.36% 0;}
+  84% {translate: -82.32% 0;}
+  85.99% {translate: -82.32% 0;}
+  86% {translate: -84.28% 0;}
+  87.99% {translate: -84.28% 0;}
+  88% {translate: -86.24% 0;}
+  89.99% {translate: -86.24% 0;}
+  90% {translate: -88.20% 0;}
+  91.99% {translate: -88.20% 0;}
+  92% {translate: -90.16% 0;}
+  93.99% {translate: -90.16% 0;}
+  94% {translate: -92.12% 0;}
+  95.99% {translate: -92.12% 0;}
+  96% {translate: -94.08% 0;}
+  97.99% {translate: -94.08% 0;}
+  98% {translate: -96.04% 0;}
+  99.99% {translate: -96.04% 0;}
+  100% {translate: -98.00% 0;}
 }
 
 .play {

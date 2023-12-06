@@ -90,9 +90,16 @@ window.onload = function () {
   const genshinimpact_p = document.getElementById("play-genshinimpact");
   const honkai3rd_p = document.getElementById("play_honkai3rd");
   const honkaistar_p = document.getElementById("play_honkaistar");
+  const tearsofthemis_p = document.getElementById("play_tearsofthemis");
+  const honkai2rd_p = document.getElementById("play_honkai2rd");
+  const N0vedesktop_p = document.getElementById("play_N0vedesktop");
+
   const genshinimpact_pb = document.getElementById("playbutton-genshinimpact");
   const honkai3rd_pb = document.getElementById("playbutton_honkai3rd");
   const honkaistar_pb = document.getElementById("playbutton-honkaistar");
+  // const tearsofthemis_pb = document.getElementById("playbutton-tearsofthemis");
+  // const honkai2rd_pb = document.getElementById("playbutton-honkai2rd");
+  // const N0vedesktop_pb = document.getElementById("playbutton-N0vedesktop");
 
   genshinimpact_pb.addEventListener("click", function () {
     genshinimpact_p.style.display = "flex";
