@@ -158,14 +158,14 @@
   height: 100%;
 }
 
-.vidio {
+.video {
   height: 100px;
   position: absolute;
   bottom: 20dvh;
   width: 100dvw;
 }
 
-.vidio > div {
+.video > div {
   height: 100%;
   width: 100%;
   display: flex;
@@ -233,7 +233,7 @@
   width: 18dvh;
 }
 
-#playbutton_honkai3rd>.vidio{
+#playbutton_honkai3rd>.video{
   object-fit: cover;
 }
 
