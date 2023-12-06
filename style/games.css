@@ -1,0 +1,270 @@
+.logo {
+  padding: 30px 20px;
+  height: 360px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.logo img {
+  padding: 5px 0;
+  height: 40px;
+  filter: drop-shadow(0px 0px 3px #000000c0);
+}
+
+#spin {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.main {
+  height: 100dvh;
+  width: 100dvw;
+  overflow: hidden;
+}
+
+.poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100dvw;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.videobackground {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.videobackground > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ribbon {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  height: 100dvh;
+  width: 17dvh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: rgba(240, 240, 240, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 9;
+}
+
+.icon {
+  height: 16.5dvh;
+  width: 15dvh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.icon > div {
+  height: 15dvh;
+  max-height: 80px;
+  aspect-ratio: 1;
+  border-radius: 7.5dvh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.icon > div > img {
+  height: 100%;
+  transition: 400ms;
+}
+
+.icon > div > img:hover {
+  height: 110%;
+}
+
+.icon-poster {
+  height: 10dvh;
+  min-height: 60px;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10dvh;
+}
+
+.icon-poster > img {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.icon-poster > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon-poster > * {
+  height: 100%;
+  margin: 0 3px;
+}
+
+.icon-poster > a > img {
+  height: 100%;
+}
+
+.icon-poster > div > a {
+  height: 46%;
+  margin: 2% 0;
+}
+
+.icon-poster > div > a > img {
+  height: 100%;
+}
+
+.vidio {
+  height: 100px;
+  position: absolute;
+  bottom: 20dvh;
+  width: 100dvw;
+}
+
+.vidio > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.playbutton {
+  height: 45px;
+  width: 45px;
+  border-radius: 30px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 400ms;
+}
+
+.playbutton > img {
+  position: relative;
+  left: 3px;
+}
+
+.playbutton:hover {
+  background-color: #00000000;
+}
+
+.playbutton:hover > img {
+  filter: brightness(500%);
+}
+
+.play {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: #000000c0;
+  height: 100dvh;
+  width: 100dvw;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+/* .play > video {
+  height: 504;
+  width: 896;
+} */
+
+.AgeRestrictions {
+  height: 10dvh;
+  position: absolute;
+  bottom: 5dvh;
+  width: 100dvw;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 5dvh;
+}
+
+#playbutton_honkai3rd{
+  position: relative;
+  height: 10dvh;
+  width: 18dvh;
+}
+
+#playbutton_honkai3rd>.vidio{
+  object-fit: cover;
+}
+
+#playbutton_honkai3rd>div{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2px);
+}
+
+#playbutton_honkai3rd>div>img{
+  height: 40%;
+  position: absolute;
+  top: 30%;
+  left: 43%;
+}
+ 
+#playbutton_honkai3rd>div>img:hover{
+  content: url("../img/Honkai_impact_3rd/play_button_color_change.webp");
+}
+
+#playbutton-honkaistar{
+  height: 100%;
+}
+
+#playbutton-honkaistar>img{
+  height: 100%;
+}
+
+#tears_of_themis_bc {
+  opacity: 1;
+  z-index: 8;
+}
+
+#genshin_impact > p {
+  border-bottom: #000 solid 2px;
+}
