@@ -105,6 +105,11 @@
   overflow: hidden;
 }
 
+.icon>p{
+  font-size: x-small;
+
+}
+
 .icon > div > img {
   height: 100%;
   transition: 400ms;
