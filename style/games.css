@@ -105,7 +105,7 @@
   overflow: hidden;
 }
 
-.icon>p{
+.icon > p {
   font-size: 90%;
 }
 
@@ -119,7 +119,7 @@
 }
 
 .icon-poster {
-  height: 10dvh;
+  height: 12dvh;
   min-height: 60px;
   width: 100dvw;
   display: flex;
@@ -137,7 +137,7 @@
 .icon-poster > div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .icon-poster > * {
@@ -150,11 +150,22 @@
 }
 
 .icon-poster > div > a {
-  height: 46%;
-  margin: 2% 0;
+  height: 48%;
 }
 
 .icon-poster > div > a > img {
+  height: 100%;
+}
+
+.products_logo {
+  height: 10dvh;
+  position: absolute;
+  top: 2dvh;
+  left: 17dvh;
+  margin-left: 100px;
+}
+
+.products_logo > img {
   height: 100%;
 }
 
@@ -162,7 +173,7 @@
   height: 10dvh;
   min-height: 100px;
   position: absolute;
-  bottom: 20dvh;
+  bottom: 25dvh;
   width: 100dvw;
 }
 
@@ -200,13 +211,13 @@
   filter: brightness(500%);
 }
 
-#playbutton-tearsofthemis{
+#playbutton-tearsofthemis {
   height: 80%;
   aspect-ratio: 1;
   overflow: hidden;
 }
 
-#playbutton-tearsofthemis>img{
+#playbutton-tearsofthemis > img {
   height: 100%;
 }
 
@@ -223,11 +234,6 @@
   z-index: 11;
 }
 
-/* .play > video {
-  height: 504;
-  width: 896;
-} */
-
 .AgeRestrictions {
   height: 10dvh;
   position: absolute;
@@ -238,45 +244,85 @@
   padding: 0 5dvh;
 }
 
-#playbutton_honkai3rd{
+.videobutton {
   position: relative;
-  height: 10dvh;
-  width: 18dvh;
+  height: 12dvh;
+  width: 20dvh;
 }
 
-#playbutton_honkai3rd>.video{
+.videobutton > video {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
-#playbutton_honkai3rd>div{
+.videobutton > div {
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
 }
 
-#playbutton_honkai3rd>div>img{
+.videobutton > div > img {
   height: 40%;
   position: absolute;
   top: 30%;
   left: 43%;
 }
- 
-#playbutton_honkai3rd>div>img:hover{
+
+.videobutton > div > img:hover {
   content: url("../img/Honkai_impact_3rd/play_button_color_change.webp");
 }
 
-#playbutton-honkaistar{
+#playbutton-honkaistar {
   height: 100%;
 }
 
-#playbutton-honkaistar>img{
+#playbutton-honkaistar > img {
   height: 100%;
 }
 
-#honkai_gakuen_2_bc {
+#n0va_desktop_link > a {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  aspect-ratio: 4;
+  background-color: #3fc7c7;
+}
+#n0va_desktop_link > a:hover {
+  background-color: #5acccc;
+}
+
+#n0va_desktop_link > a > img {
+  height: 60%;
+}
+
+#n0va_desktop_link > a > span {
+  color: #fff;
+  width: 70%;
+  height: 50%;
+}
+
+#playbutton-N0vedesktop {
+  margin-left: 20px;
+  height: 70%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+#playbutton-N0vedesktop:hover {
+  background-color: #a5a5a5;
+}
+
+#playbutton-N0vedesktop > img {
+  height: 100%;
+}
+
+#n0va_desktop_bc {
   opacity: 1;
   z-index: 8;
 }

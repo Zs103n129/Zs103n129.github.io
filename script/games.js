@@ -98,8 +98,8 @@ window.onload = function () {
   const honkai3rd_pb = document.getElementById("playbutton_honkai3rd");
   const honkaistar_pb = document.getElementById("playbutton-honkaistar");
   const tearsofthemis_pb = document.getElementById("playbutton-tearsofthemis");
-  // const honkai2rd_pb = document.getElementById("playbutton-honkai2rd");
-  // const N0vedesktop_pb = document.getElementById("playbutton-N0vedesktop");
+  const honkai2rd_pb = document.getElementById("playbutton_honkai2rd");
+  const N0vedesktop_pb = document.getElementById("playbutton-N0vedesktop");
 
   genshinimpact_pb.addEventListener("click", function () {
     genshinimpact_p.style.display = "flex";
@@ -139,5 +139,25 @@ window.onload = function () {
   tearsofthemis_p.addEventListener("click", function () {
     tearsofthemis_p.style.display = "none";
     tearsofthemis_p.children[0].pause();
+  });
+
+  honkai2rd_pb.addEventListener("click", function () {
+    honkai2rd_p.style.display = "flex";
+    honkai2rd_p.children[0].play();
+  });
+
+  honkai2rd_p.addEventListener("click", function () {
+    honkai2rd_p.style.display = "none";
+    honkai2rd_p.children[0].pause();
+  });
+
+  N0vedesktop_pb.addEventListener("click", function () {
+    N0vedesktop_p.style.display = "flex";
+    N0vedesktop_p.children[0].play();
+  });
+
+  N0vedesktop_p.addEventListener("click", function () {
+    N0vedesktop_p.style.display = "none";
+    N0vedesktop_p.children[0].pause();
   });
 };
