@@ -165,10 +165,10 @@ window.onload = function () {
   const products_logo = document.getElementsByClassName("products_logo")
 
   window.addEventListener("resize", function () {
-    if (window.innerHeight < 700) {
+    if (window.innerHeight < 500) {
       ribbon.style.left = "-50dvh";
     }
-    if (window.innerHeight > 700) {
+    if (window.innerHeight > 500) {
       ribbon.style.left = "70px";
     }
   });
