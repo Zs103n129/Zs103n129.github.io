@@ -1,21 +1,26 @@
-let scrollPosition = 0;// 设置当前滚动位置
+let scrollPosition = 0; // 设置当前滚动位置
 // 监听滚轮事件
-window.addEventListener('wheel', function (e) {
+window.addEventListener("wheel", function (e) {
+  if (e.deltaY > 0) {
+    // 判断滚轮方向
+    scrollPosition++; // 向下滚动，滚动位置加一
+  } else {
+    scrollPosition--; // 向上滚动，滚动位置减一
+  }
 
-    if (e.deltaY > 0) // 判断滚轮方向
+  if (scrollPosition > 1) {
+    scrollPosition = 1;
+  } //超出时返回
+  if (scrollPosition < 0) {
+    scrollPosition = 0;
+  }
+
+  let scrollDistance = window.innerHeight * scrollPosition; // 计算要滚动的距离（100vh）
+  window.scrollTo(
+    // 滚动到指定位置
     {
-        scrollPosition++;// 向下滚动，滚动位置加一
-    } else {
-        scrollPosition--;// 向上滚动，滚动位置减一
+      top: scrollDistance,
+      behavior: "smooth",
     }
-
-    if (scrollPosition > 1) { scrollPosition = 1; }//超出时返回
-    if (scrollPosition < 0) { scrollPosition = 0; }
-
-    let scrollDistance = window.innerHeight * scrollPosition;// 计算要滚动的距离（100vh）
-    window.scrollTo// 滚动到指定位置
-        ({
-            top: scrollDistance,
-            behavior: 'smooth'
-        });
+  );
 });

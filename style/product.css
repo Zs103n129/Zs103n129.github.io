@@ -63,7 +63,8 @@
   object-fit: cover;
 }
 
-.ribbon {
+#ribbon {
+  transition: 1s;
   position: absolute;
   top: 0;
   left: 70px;
@@ -74,7 +75,7 @@
   align-content: center;
   align-items: center;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   background-color: rgba(240, 240, 240, 0.5);
   backdrop-filter: blur(5px);
   z-index: 9;
@@ -161,8 +162,7 @@
   height: 10dvh;
   position: absolute;
   top: 2dvh;
-  left: 17dvh;
-  margin-left: 100px;
+  right: 2dvw;
 }
 
 .products_logo > img {

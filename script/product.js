@@ -160,4 +160,16 @@ window.onload = function () {
     N0vedesktop_p.style.display = "none";
     N0vedesktop_p.children[0].pause();
   });
+
+  const ribbon = document.getElementById("ribbon");
+  const products_logo = document.getElementsByClassName("products_logo")
+
+  window.addEventListener("resize", function () {
+    if (window.innerHeight < 700) {
+      ribbon.style.left = "-50dvh";
+    }
+    if (window.innerHeight > 700) {
+      ribbon.style.left = "70px";
+    }
+  });
 };

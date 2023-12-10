@@ -1,170 +1,170 @@
 .main {
-    position: fixed;
-    width: 100dvw;
-    height: 100dvh;
-    overflow: hidden;
+  position: fixed;
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
 }
 
 .videobackground {
-    width: 100dvw;
-    height: 100dvh;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .videobackground video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(10%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(10%);
 }
 
 .logo {
-    padding: 10px 20px;
-    height: 50px;
-    width: 340px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
+  padding: 10px 20px;
+  height: 50px;
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.logo img{
-    padding: 0 5px;
-    width: 40px;
+.logo img {
+  padding: 0 5px;
+  width: 40px;
 }
 
 #spin {
-    animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-        transform: rotate(-360deg);
-    }
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 .text {
-    position: absolute;
-    top: 0;
-    width: 100dvw;
-    height: 100dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text img {
-    max-height: 60%;
-    max-width: 800px;
+  max-height: 60%;
+  max-width: 800px;
 }
 
 .page {
-    position: relative;
-    height: 200dvh;
-    width: 100dvw;
-    z-index: 2;
+  position: relative;
+  height: 200dvh;
+  width: 100dvw;
+  z-index: 2;
 }
 
 .page1 {
-    width: 100dvw;
-    height: 100dvh;
+  width: 100dvw;
+  height: 100dvh;
 }
 
 #mousedown {
-    position: absolute;
-    bottom: 100dvh;
-    width: 100dvw;
-    height: 20dvh;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+  position: absolute;
+  bottom: 100dvh;
+  width: 100dvw;
+  height: 20dvh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 #downsrrowbox {
-    position: relative;
-    height: 50px;
-    width: 20px;
-    padding-top: 3px;
-    overflow: hidden;
+  position: relative;
+  height: 50px;
+  width: 20px;
+  padding-top: 3px;
+  overflow: hidden;
 }
 
 #mouse {
-    width: 30px;
-    height: 45px;
+  width: 30px;
+  height: 45px;
 }
 
 #downsrrow {
-    position: absolute;
-    width: 20px;
-    height: 25px;
-    animation: move0 1s ease infinite;
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  animation: move0 1s ease infinite;
 }
 
 @keyframes move0 {
-    from {
-        top: -25px;
-    }
+  from {
+    top: -25px;
+  }
 
-    to {
-        top: 50px;
-    }
+  to {
+    top: 50px;
+  }
 }
 
 .link {
-    width: 100dvw;
-    height: 30dvh;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  width: 100dvw;
+  height: 30dvh;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .link a {
-    width: 200px;
-    height: 80px;
-    border-radius: 10px;
-    color: #ffffff;
-    border: #ffffff 2px solid;
-    background-color: #00000000;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  width: 200px;
+  height: 80px;
+  border-radius: 10px;
+  color: #ffffff;
+  border: #ffffff 2px solid;
+  background-color: #00000000;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Microsoft YaHei UI';
-    line-height: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei UI";
+  line-height: 5px;
 }
 
 .link a:hover {
-    font-size: 22px;
-    color: #000000;
-    background-color: #ffffff;
+  font-size: 22px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .publicity {
-    height: 100dvh;
-    width: 100dvw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .publicity video {
-    height: 50%;
+  height: 50%;
 }
