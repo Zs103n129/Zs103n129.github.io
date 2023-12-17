@@ -1,0 +1,56 @@
+p {
+  color: #fff;
+  font-size: larger;
+  font-family: "微软雅黑 light";
+}
+
+.main > li {
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+.main > li > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main > li > div {
+  position: absolute;
+  left: 60%;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main > li > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.main > li > div > button {
+  height: 30px;
+  width: 70px;
+  background-color: #00000000;
+  background-image: url();
+}
+
+.main > li > dir {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: #000000c0;
+  height: 100dvh;
+  width: 100dvw;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
