@@ -12,7 +12,7 @@
   height: 120%;
   width: 120%;
   object-fit: cover;
-  filter: blur(10px);
+  filter: blur(30px);
 }
 
 .main > li > div {

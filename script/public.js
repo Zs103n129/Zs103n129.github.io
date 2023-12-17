@@ -25,4 +25,5 @@ function wheelturnpage(max) {
       }
     );
   });
+  document.removeEventListener("wheel", onscroll);
 }
