@@ -1,3 +1,17 @@
+function throttle(fn, delay) {
+  let timer = null;
+  return function() {
+    let context = this;
+    let args = arguments;
+    if (!timer) {
+      timer = setTimeout(function() {
+        fn.apply(context, args);
+        timer = null;
+      }, delay);
+    }
+  };
+}
+
 function wheelturnpage(max) {
   let scrollPosition = 0; // 设置当前滚动位置
   // 监听滚轮事件
@@ -10,7 +24,7 @@ function wheelturnpage(max) {
     }
 
     if (scrollPosition > max) {
-      scrollPosition = 1;
+      scrollPosition = max;
     } //超出时返回
     if (scrollPosition < 0) {
       scrollPosition = 0;

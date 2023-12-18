@@ -1,1 +1,1 @@
-wheelturnpage(11);
+throttle(wheelturnpage(9),500);
