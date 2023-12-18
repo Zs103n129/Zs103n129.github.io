@@ -1,3 +1,38 @@
+.logo {
+  /* padding: 20px; */
+  height: 40dvh;
+  /* width: 7dvw; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  left: 10px;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.logo img {
+  margin: 2.5% 0;
+  height: 10%;
+  aspect-ratio: 1;
+  filter: drop-shadow(0px 0px 3px #000000c0);
+}
+
+#spin {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
 .main > li {
   width: 100dvw;
   height: 100dvh;
@@ -69,6 +104,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 300ms;
+}
+
+.main > li > div > div > button:hover {
+  background-color: #ffffff30;
 }
 
 .main > li > div > div > button > img {

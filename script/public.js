@@ -1,10 +1,10 @@
 function throttle(fn, delay) {
   let timer = null;
-  return function() {
+  return function () {
     let context = this;
     let args = arguments;
     if (!timer) {
-      timer = setTimeout(function() {
+      timer = setTimeout(function () {
         fn.apply(context, args);
         timer = null;
       }, delay);
@@ -39,5 +39,4 @@ function wheelturnpage(max) {
       }
     );
   });
-  document.removeEventListener("wheel", onscroll);
 }
