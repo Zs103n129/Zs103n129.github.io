@@ -1,6 +1,6 @@
 window.onload = function () {
-  throttle(wheelturnpage(10), 500);
-  wheelturnpage(10);
+  throttle(wheelturnpage(11), 500);
+  wheelturnpage(11);
 
   const finally_b = document.getElementById("finally_educate_buttom");
   const Seele_b = document.getElementById("Seele_buttom");

@@ -130,23 +130,28 @@
 }
 
 .head {
-  height: 100dvh;
+  height: 200dvh;
   width: 100dvw;
   overflow: hidden;
   position: relative;
+  background-image: url(../img/honkai_impact_3rd/information/Shading.webp);
 }
 
-.head > img {
+.head > dir {
+width: 100dvw;
+height: 100dvh;
+overflow: hidden;
+}
+
+.head > dir>img{
   width: 100%;
-  height: 100dvh;
-  object-fit: cover;
 }
 
 .head > ul {
-  height: 25%;
+  height: 50dvh;
   width: 100%;
   position: absolute;
-  bottom: 10dvh;
+  bottom: 25dvh;
 }
 
 .head > ul > li {
@@ -160,27 +165,28 @@
 
 .head > ul > li > img {
   display: none;
-  transition: 2s;
+  transition: 300ms;
 }
 
 .head > div {
   width: 100dvw;
-  height: 25dvh;
+  height: 60dvh;
   position: absolute;
-  bottom: 10dvh;
+  bottom: 20dvh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .head > div > div {
-  width: 55dvh;
+  width: 107dvh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .head > div > div > button {
+  height: 5dvh;
   background-color: #00000000;
 }
 
@@ -192,16 +198,16 @@
 #left > img {
   display: flex;
   position: relative;
-  right: 70px;
-  top: 10px;
+  right: 15dvh;
+  top: 3dvh;
   height: 90%;
   filter: brightness(60%);
 }
 #right > img {
   display: flex;
   position: relative;
-  left: 70px;
-  top: 10px;
+  left: 15dvh;
+  top: 3dvh;
   height: 90%;
   filter: brightness(60%);
 }
