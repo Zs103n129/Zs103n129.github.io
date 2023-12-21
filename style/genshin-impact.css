@@ -1,0 +1,233 @@
+p {
+  font-family: "Microsoft YaHei";
+  letter-spacing: 2px;
+}
+h1 {
+  font-family: "Microsoft YaHei";
+}
+h2 {
+  font-family: "Microsoft YaHei";
+}
+
+body {
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.top {
+  height: 200dvh;
+  width: 100dvw;
+  position: relative;
+}
+.top > img {
+  height: 100dvh;
+  width: 100dvw;
+  object-fit: cover;
+}
+.top > ul {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+.top > ul > li {
+  height: 100dvh;
+  width: 100dvw;
+  /* opacity: 0; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center center;
+}
+.top > ul > li > img {
+  height: 50%;
+}
+.top > div {
+  position: absolute;
+  bottom: 0;
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top > div > button {
+  height: 10dvh;
+  width: 10dvh;
+  border-radius: 5dvh;
+  border: 3px #fff solid;
+  overflow: hidden;
+  background-color: #00000000;
+}
+.top > div > button > img {
+  height: 100%;
+  width: 100%;
+  background-color: #00000090;
+  object-fit: cover;
+}
+
+.main > li {
+  position: relative;
+}
+.mainimgbox {
+  width: 100dvw;
+  height: 20dvw;
+  overflow: hidden;
+}
+.mainimgbox > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 500ms;
+}
+.main > li:hover > .mainimgbox > img {
+  transform: scale(1.2);
+}
+.main > li:hover > p {
+  background-color: #00000030;
+}
+.main>li:focus>.detail{
+  height: 100dvh;
+  padding: 10dvh 0;
+}
+.main > li > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  height: 20dvw;
+  width: 100dvw;
+  background-color: #00000090;
+  background-image: url(../img/genshin_impact/3.0/Shading.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 36px;
+  color: #fff;
+  letter-spacing: 5px;
+  transform: 500ms;
+}
+.main > li > dir {
+  position: absolute;
+  top: 0;
+  height: 13dvw;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.detail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  /* show */
+  height: 100dvh;
+  padding: 10dvh 0;
+  /* hide */
+  height: 0;
+  padding: 0;
+}
+.detail > img {
+  height: 20%;
+}
+.detail > h1 {
+  font-weight: 400;
+  font-size: 4.6vh;
+  color: #fff;
+}
+.detail > p {
+  width: 50%;
+  min-width: 500px;
+  line-height: 5dvh;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+.detail > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.detail > div > img {
+  height: 75px;
+  width: 75px;
+}
+.detail > div > p {
+  font-size: 16px;
+  color: #fff;
+}
+.detail > dir {
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100dvw;
+  background-color: #00000090;
+  /* show */
+  display: flex;
+  /* hide */
+  display: none;
+}
+.detail > dir > * {
+  width: 50%;
+  min-width: 500px;
+}
+.detail > dir > dir {
+  height: 60px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.detail > dir > dir > h1 {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 0 5px;
+  margin-right: 5px;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff30;
+}
+.detail > dir > dir > img {
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 20px;
+  background-color: #ffffff30;
+}
+.detail > dir > div {
+  height: 70dvh;
+  overflow: auto;
+}
+.detail > dir > div > div {
+  border-bottom: 2px #ffffff90 solid;
+}
+.detail > dir > div > div > h2 {
+  color: #fff;
+  display: inline-block;
+  line-height: 50px;
+  border-bottom: 2px #cca574 solid;
+}
+.detail > dir > div > img {
+  width: 100%;
+}
+.detail > dir > div > p {
+  color: #fff;
+}

@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .logo {
   /* padding: 20px; */
   height: 40dvh;
