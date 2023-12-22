@@ -108,7 +108,7 @@ window.onload = function () {
     detail[i].addEventListener("click", function (e) {
       stopfunc(e);
       detail[i].style.height = 0 + "dvh";
-      control=false;
+      control = false;
     });
     detailed[i].addEventListener("click", function (e) {
       stopfunc(e);

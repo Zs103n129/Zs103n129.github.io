@@ -162,7 +162,7 @@ window.onload = function () {
   });
 
   const ribbon = document.getElementById("ribbon");
-  const products_logo = document.getElementsByClassName("products_logo")
+  const products_logo = document.getElementsByClassName("products_logo");
 
   window.addEventListener("resize", function () {
     if (window.innerHeight < 500) {

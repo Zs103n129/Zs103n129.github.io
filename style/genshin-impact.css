@@ -9,15 +9,6 @@ h2 {
   font-family: "Microsoft YaHei";
 }
 
-body {
-  overflow-x: hidden;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-::-webkit-scrollbar {
-  display: none;
-}
-
 .top {
   height: 200dvh;
   width: 100dvw;
@@ -93,7 +84,7 @@ body {
 .main > li:hover > p {
   background-color: #00000030;
 }
-.main>li:focus>.detail{
+.main > li:focus > .detail {
   height: 100dvh;
   padding: 10dvh 0;
 }
