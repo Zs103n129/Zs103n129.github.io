@@ -35,13 +35,15 @@ window.onload = function () {
     }
     purge();
   });
+  console.log(detail);
   for (var i = 0; i < mainli.length; i++) {
     mainli[i].index = i;
     mainli[i].addEventListener("click", function () {
-      detail[this.index].style.height = 100 + "dvh";
-      detail[this.index].scrollIntoView({ behavior: "smooth" });
-      count = this.index;
-      control = true;
+        detail[count].style.height=0+"dvh";
+        detail[this.index].style.height = 100 + "dvh";
+        detail[this.index].scrollIntoView({ behavior: "smooth" });
+        count = this.index;
+        control = true;
     });
   }
   for (let i = 0; i < detailed.length; i++) {
@@ -63,43 +65,6 @@ window.onload = function () {
   function scroll() {
     state = true;
   }
-  // window.addEventListener("wheel", function (e) {
-  //     if (state && control) {
-  //       // console.log(count);
-  //       state = false;
-  //       setTimeout(scroll, 1000);
-  //       if (e.deltaY < 0) {
-  //         if (count == 0) {
-  //           detail[0].style.height = 0 + "dvh";
-  //           control = false;
-  //           return;
-  //         }
-  //         detail[count].style.height = 0 + "dvh";
-  //         count--;
-  //         // console.log(count);
-  //         detail[count].style.height = 100 + "dvh";
-  //         setTimeout(function () {
-  //           // mainli[count].click();
-  //           detail[count].scrollIntoView(true);
-  //         }, 200);
-  //       } else {
-  //         // console.log(2);
-  //         if (count == 4) {
-  //           control = false;
-  //           detail[4].style.height = 0 + "dvh";
-  //           return;
-  //         }
-  //         detail[count].style.height = 0 + "dvh";
-  //         count++;
-  //         // console.log(count);
-  //         detail[count].style.height = 100 + "dvh";
-  //         setTimeout(function () {
-  //           // mainli[count].click();
-  //           detail[count].scrollIntoView(true);
-  //         }, 200);
-  //       }
-  //     }
-  // });
   function stopfunc(e) {
     e.stopPropagation ? e.stopPropagation() : (e.cancelBubble = true);
   }
@@ -108,6 +73,7 @@ window.onload = function () {
     detail[i].addEventListener("click", function (e) {
       stopfunc(e);
       detail[i].style.height = 0 + "dvh";
+      detail[i].style.padding = 0;
       control = false;
     });
     detailed[i].addEventListener("click", function (e) {

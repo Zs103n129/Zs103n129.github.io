@@ -1,0 +1,62 @@
+.main > img {
+  height: 100dvh;
+  width: 100dvw;
+  object-fit: cover;
+}
+.main > div {
+  height: 100dvh;
+  width: 100dvw;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main > div > img {
+  width: 60%;
+}
+.main > div > ul {
+  height: 50dvh;
+  width: 100%;
+  position: absolute;
+}
+.main > div > ul > li {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+}
+.main > div > dir {
+  height: 50dvh;
+  width: 80dvw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+#center > img {
+  display: flex;
+  z-index: 2;
+}
+
+#left > img {
+  display: flex;
+  position: relative;
+  right: 15dvh;
+  top: 3dvh;
+  height: 90%;
+  filter: brightness(60%);
+}
+#right > img {
+  display: flex;
+  position: relative;
+  left: 15dvh;
+  top: 3dvh;
+  height: 90%;
+  filter: brightness(60%);
+}
