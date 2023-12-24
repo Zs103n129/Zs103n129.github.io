@@ -21,16 +21,46 @@ window.onload = function () {
     "https://webstatic.mihoyo.com/upload/op-public/2023/08/07/5d5585cd0196144b443546c6b58040c6_3811021075406375920.mp4",
     "https://webstatic.mihoyo.com/upload/op-public/2023/08/18/a2d7cb8bde0812cb577e0d6760ee4ba2_5911985359501523885.mp4",
   ];
-  var transform = ["65", "90", "115"];
+  var transform = ["340", "0", "20"];
   let next = 3;
   let last = 0;
-  let distance = 0; //移动的距离
-  let count = 0; //记录被点击了几次
+  let distance = 0;//移动的距离
+  let count = 0;//记录被点击了几次
   let fig = 0;
   let video_count = true;
 
-  wheelturnpage(2);
+  //页面滚动
+  // function wheelturnpage(max) {
+  //   let scrollPosition = 0; // 设置当前滚动位置
+  //   // 监听滚轮事件
+  //   window.addEventListener("wheel", function (e) {
+  //     if (e.deltaY > 0) {
+  //       // 判断滚轮方向
+  //       scrollPosition++; // 向下滚动，滚动位置加一
+  //     } else {
+  //       scrollPosition--; // 向上滚动，滚动位置减一
+  //     }
 
+  //     if (scrollPosition > max) {
+  //       scrollPosition = max;
+  //     } //超出时返回
+  //     if (scrollPosition < 0) {
+  //       scrollPosition = 0;
+  //     }
+
+  //     let scrollDistance = window.innerHeight * scrollPosition; // 计算要滚动的距离（100vh）
+  //     window.scrollTo(
+  //       // 滚动到指定位置
+  //       {
+  //         top: scrollDistance,
+  //         behavior: "smooth",
+  //       }
+  //     );
+  //   });
+  // }
+  // setInterval(function () {
+  //   wheelturnpage();
+  // }, 2000);
   //自动轮播、手动轮播
   var timing = setInterval(function () {
     right.click();
@@ -122,7 +152,7 @@ window.onload = function () {
       play.children[0].play();
       clearInterval(timing);
       timing = null;
-    });
+    })
   }
   play.addEventListener("click", function () {
     play.style.display = "none";
@@ -130,7 +160,7 @@ window.onload = function () {
     timing = setInterval(function () {
       right.click();
     }, 2500);
-  });
+  })
   //点击切换图片
   function left_li_display() {
     left_li[0].style.display = "none";
@@ -157,27 +187,27 @@ window.onload = function () {
       img_2_display();
       left_fig[i].style.left = -100 + "dvw";
       if (i == 0) {
-        revolve_li[0].style.transform = "rotate(" + transform[1] + "deg)";
-        revolve_li[1].style.transform = "rotate(" + transform[2] + "deg)";
-        revolve_li[2].style.transform = "rotate(" + transform[0] + "deg)";
+        revolve_li[0].style.transform = 'rotate(' + transform[1] + 'deg)';
+        revolve_li[1].style.transform = 'rotate(' + transform[2] + 'deg)';
+        revolve_li[2].style.transform = 'rotate(' + transform[0] + 'deg)';
       }
       if (i == 2) {
-        revolve_li[0].style.transform = "rotate(" + transform[2] + "deg)";
-        revolve_li[1].style.transform = "rotate(" + transform[0] + "deg)";
-        revolve_li[2].style.transform = "rotate(" + transform[1] + "deg)";
+        revolve_li[0].style.transform = 'rotate(' + transform[2] + 'deg)';
+        revolve_li[1].style.transform = 'rotate(' + transform[0] + 'deg)';
+        revolve_li[2].style.transform = 'rotate(' + transform[1] + 'deg)';
       }
       if (i == 1) {
-        revolve_li[1].style.transform = "rotate(" + transform[1] + "deg)";
-        revolve_li[0].style.transform = "rotate(" + transform[0] + "deg)";
-        revolve_li[2].style.transform = "rotate(" + transform[2] + "deg)";
+        revolve_li[1].style.transform = 'rotate(' + transform[1] + 'deg)';
+        revolve_li[0].style.transform = 'rotate(' + transform[0] + 'deg)';
+        revolve_li[2].style.transform = 'rotate(' + transform[2] + 'deg)';
       }
-    });
+    })
   }
   for (let i = 0; i < left_li.length; i++) {
     left_li[i] = this;
     left_li[i].addEventListener("click", function () {
       fig = i;
       left_fig_right();
-    });
+    })
   }
-};
+}
