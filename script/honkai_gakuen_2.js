@@ -28,7 +28,7 @@ window.onload = function () {
     cgbuttons.children[1].style.width = "55%";
   });
 
-  function initialise_creact(){
+  function initialise_creact() {
     creact.children[0].style.display = "block";
     creact.children[1].style.display = "none";
     creact.children[2].style.display = "block";
@@ -42,34 +42,34 @@ window.onload = function () {
     creact.children[10].style.display = "block";
     creact.children[11].style.display = "none";
   }
-  creact.children[0].addEventListener("click" ,function(){
+  creact.children[0].addEventListener("click", function () {
     initialise_creact();
     creact.children[0].style.display = "none";
     creact.children[1].style.display = "block";
-  })
-  creact.children[2].addEventListener("click" ,function(){
+  });
+  creact.children[2].addEventListener("click", function () {
     initialise_creact();
     creact.children[2].style.display = "none";
     creact.children[3].style.display = "block";
-  })
-  creact.children[4].addEventListener("click" ,function(){
+  });
+  creact.children[4].addEventListener("click", function () {
     initialise_creact();
     creact.children[4].style.display = "none";
     creact.children[5].style.display = "block";
-  })
-  creact.children[6].addEventListener("click" ,function(){
+  });
+  creact.children[6].addEventListener("click", function () {
     initialise_creact();
     creact.children[6].style.display = "none";
     creact.children[7].style.display = "block";
-  })
-  creact.children[8].addEventListener("click" ,function(){
+  });
+  creact.children[8].addEventListener("click", function () {
     initialise_creact();
     creact.children[8].style.display = "none";
     creact.children[9].style.display = "block";
-  })
-  creact.children[10].addEventListener("click" ,function(){
+  });
+  creact.children[10].addEventListener("click", function () {
     initialise_creact();
     creact.children[10].style.display = "none";
     creact.children[11].style.display = "block";
-  })
+  });
 };

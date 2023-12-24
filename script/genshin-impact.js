@@ -39,11 +39,11 @@ window.onload = function () {
   for (var i = 0; i < mainli.length; i++) {
     mainli[i].index = i;
     mainli[i].addEventListener("click", function () {
-        detail[count].style.height=0+"dvh";
-        detail[this.index].style.height = 100 + "dvh";
-        detail[this.index].scrollIntoView({ behavior: "smooth" });
-        count = this.index;
-        control = true;
+      detail[count].style.height = 0 + "dvh";
+      detail[this.index].style.height = 100 + "dvh";
+      detail[this.index].scrollIntoView({ behavior: "smooth" });
+      count = this.index;
+      control = true;
     });
   }
   for (let i = 0; i < detailed.length; i++) {
